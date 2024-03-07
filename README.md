@@ -11,15 +11,21 @@ O retorno da aplicação node.js para o nginx deverá ser:
 Lista de nomes cadastrada no banco de dados.
 Gere o docker-compose de uma forma que basta apenas rodarmos: docker-compose up -d que tudo deverá estar funcionando e disponível na porta: 8080.
 
-🌱 Como executar o projeto:
+## 🌱Como executar o projeto:
 
--> Primeiro você deve criar uma network para que os containers possam se comunicar entre si:
-   docker network create app-node-network
 
--> Executar o comando docker-compose para subir os containers:
+<i>Primeiro você deve criar uma network para que os containers possam se comunicar entre si:</i>
+```sh
+docker network create app-node-network
+```
+<i>Executar o comando docker-compose para subir os containers:</i>
+```sh
 docker-compose up -d
+```
 
--> Acessar a aplicação em seu browser:
+<i>Acessar a aplicação em seu browser:</i>
+```sh
 http://localhost:8080
+```
 
--> Para aparecer um novo nome, precisa atualizar a página para adicionar ao banco de dados.
+<i>Obs: Para aparecer um novo nome, precisa atualizar a página para adicionar ao banco de dados.</i>
