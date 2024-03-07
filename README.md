@@ -6,16 +6,20 @@
 
 O retorno da aplicação node.js para o nginx deverá ser:
 
-Full Cycle Rocks!
+<h2> Full Cycle Rocks!</h2>
 
 Lista de nomes cadastrada no banco de dados.
 Gere o docker-compose de uma forma que basta apenas rodarmos: docker-compose up -d que tudo deverá estar funcionando e disponível na porta: 8080.
 
-🌱 Como executar o projeto
-Primeiro você deve criar uma network para que os containers possam se comunicar entre si:
-docker network create app-node-network
-Agora basta executar o comando docker-compose para subir os containers:
+🌱 Como executar o projeto:
+
+-> Primeiro você deve criar uma network para que os containers possam se comunicar entre si:
+   docker network create app-node-network
+
+-> Executar o comando docker-compose para subir os containers:
 docker-compose up -d
-Agora basta acessar a aplicação em seu browser:
+
+-> Acessar a aplicação em seu browser:
 http://localhost:8080
-Todas as vezes que você atualizar a página, um novo nome será adicionado ao banco de dados. :)
+
+-> Para aparecer um novo nome, precisa atualizar a página para adicionar ao banco de dados.
